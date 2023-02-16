@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+header {
+  font-size: 28px;
+}
+
+nav {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  margin-top: 30px;
+}
+nav > header {
+  margin: 12px 4px;
+  text-align: center;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+}
+nav > ul {
+  padding: 0;
+}
+nav > ul > li {
+  list-style-type: none;
+  padding: 10px 30px;
+  border-top: 1px solid black;
+  font-size: 16px;
+  color: gray;
+}
+#navbar {
+  border-right: solid;
+  border-right-color: gainsboro;
+  border-right-width: 4px;
+  min-width: 290px;
+}
+
+#main-doc {
+  position: absolute;
+  width: calc(100%-300px);
+  left: 300px;
+  margin-top: 50px;
+  margin-right: 24px;
+}
+.main-section {
+  padding: 8px 16px;
+}
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+section[class="main-section"] p,
+code {
+  padding-left: 16px;
+  line-height: 1.5;
+}
+section[class="main-section"] ul li {
+  margin-left: 16px;
+  line-height: 1.5;
+}
+code {
+  font-size: 0.96rem;
+  display: block;
+  width: 100%;
+  min-width: 400px;
+  padding: 24px 16px;
+  margin-left: 16px;
+  border-radius: 5px;
+  white-space: pre-line;
+  background-color: #f7f7f7;
+}
+@media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }  
+    code {
+      margin-left: -20px;
+      width: 100%;
+      padding: 15px;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+    }
+  }
+  
